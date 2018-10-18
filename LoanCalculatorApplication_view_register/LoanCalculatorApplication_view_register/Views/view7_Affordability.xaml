@@ -23,23 +23,39 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
 
         </Grid.RowDefinitions>
 
-                <TabControl Width="700" Height="350" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="10">
-                    
-                    <TabItem Name="tbAfforability" Header="Step1. Afforability" Width="150" Height="40"  FontSize="15" FontWeight="Bold">
-                        <Label Name="lblAffordability"  Content="Afforability" />
-                    </TabItem>
-                    <TabItem Name="tbRepayment" Header="Step2. Repayment" Width="150" FontSize="15" FontWeight="Bold">
-                        <Label Name="lblRepayment"  Content="Repayment" />
-                    </TabItem>
-                    <TabItem Name="tbSummary" Header="Step3. Summary" Width="150" FontSize="15" FontWeight="Bold">
-                        <Label Name="lblSummary"  Content="Summary" />
-                    </TabItem>
-
-        </TabControl>   
- 
+        <TabControl Width="700" Height="350" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="10">
+            <TabItem Name="tbAfforability" Header="Step1. Afforability" Width="150" Height="40"  FontSize="15" FontWeight="Bold">
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="20"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        
+                        <TextBlock Name="tblockSalary" Text="Gross monthly salary" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"  />
+                        <TextBox Name="tboxSalary" Width="200" Height="30" Grid.Column="2" Grid.Row="1" Margin="5" />
+                                               
+                        </Grid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Name="tbRepayment" Header="Step2. Repayment" Width="150" FontSize="15" FontWeight="Bold"/>
+            <TabItem Name="tbSummary" Header="Step3. Summary" Width="150" FontSize="15" FontWeight="Bold" />
+        </TabControl>
+        
+        
     </Grid>
 </Window>
