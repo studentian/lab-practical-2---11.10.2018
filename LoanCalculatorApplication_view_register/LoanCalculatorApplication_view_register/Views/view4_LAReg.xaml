@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LabPractical2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="LARegistration" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30" />
@@ -55,10 +55,10 @@
         <TextBox Grid.Column="4" Grid.Row="6" Width="200" Name="tbxEmail" FontSize="16"/>
 
         <WrapPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="6" Margin="5" Height="100" >
-            <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\laptop.jpg" Height="100" Width="180" />
-            <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\callcentre.jpg" Height="100" Width="180" />
-            <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\startup.jpg" Height="100" Width="180" />
-            <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\callcentre.jpg" Height="100" Width="180" />
+            <Image Source="Images\coffee.jpg" Height="100" Width="180" />
+            <Image Source="Images\startup.jpg" Height="100" Width="180" />
+            <Image Source="Images\callcentre.jpg" Height="100" Width="180" />
+            <Image Source="Images\laptop.jpg" Height="100" Width="180" />
         </WrapPanel>
     </Grid>
 </Window>

@@ -51,33 +51,19 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Compile Include="view1_LoginOrRegister.xaml.cs">
-      <DependentUpon>view1_LoginOrRegister.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View5_FSPReg.xaml.cs">
-      <DependentUpon>View5_FSPReg.xaml</DependentUpon>
-    </Compile>
-    <Page Include="view1_LoginOrRegister.xaml">
+    <Page Include="Views\view1_LoginOrRegister.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="view4_LAReg.xaml">
+    <Page Include="Views\view4_LAReg.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="view4_LAReg.xaml.cs">
-      <DependentUpon>view4_LAReg.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="View5_FSPReg.xaml">
+    <Page Include="Views\View5_FSPReg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\view7_Affordability.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -96,6 +82,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Views\.xaml.cs">
+      <DependentUpon>view7_Affordability.xaml</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -108,8 +97,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Views\" />
+    <Resource Include="Images\callcentre.jpg" />
+    <Resource Include="Images\callcentre2.jpg" />
+    <Resource Include="Images\coffee.jpg" />
+    <Resource Include="Images\computer.jpg" />
+    <Resource Include="Images\laptop.jpg" />
+    <Resource Include="Images\startup.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
