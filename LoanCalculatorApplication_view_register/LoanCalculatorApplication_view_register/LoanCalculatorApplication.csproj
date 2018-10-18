@@ -55,9 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="view1_LoginOrRegister.xaml.cs">
+      <DependentUpon>view1_LoginOrRegister.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View5_FSPReg.xaml.cs">
       <DependentUpon>View5_FSPReg.xaml</DependentUpon>
     </Compile>
+    <Page Include="view1_LoginOrRegister.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="view4_LAReg.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

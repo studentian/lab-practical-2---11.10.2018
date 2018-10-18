@@ -1,0 +1,46 @@
+﻿<Window x:Class="LoanCalculatorApplication_view_register.view1_LoginOrRegister"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoanCalculatorApplication_view_register"
+        mc:Ignorable="d"
+        Title="view1_LoginOrRegister" Height="400" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" /><!--means to use the remaing space-->
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+         
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="General Loan Calculator Application" FontSize="18" FontWeight="Medium" TextAlignment="Justify" Grid.ColumnSpan="2"/>
+
+        <TextBlock Name="lblUserName" Text="Username" Grid.Column="1" Grid.Row="2" />
+        <TextBox Name="tbxUserName" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2" />
+
+        <TextBlock Name="lblPassword" Text="Password" Grid.Column="1" Grid.Row="3" />
+        <TextBox Name="tbxPassword" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="3" />
+
+        <Button Name="btnLogin" Content="Login" Background="BlanchedAlmond" BorderBrush="Aqua" Grid.Column="1" Grid.Row="4" />
+        
+        <TextBlock Name="lblNotRegistered" Text="Not a member? Please click below to register:" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="6" TextDecorations="underline" FontStyle="Italic" />
+
+        <Button Name="btnRegister" Content="Register" Background="GreenYellow" BorderBrush="Aqua" Grid.Column="1" Grid.Row="7" />
+
+    </Grid>
+</Window>
