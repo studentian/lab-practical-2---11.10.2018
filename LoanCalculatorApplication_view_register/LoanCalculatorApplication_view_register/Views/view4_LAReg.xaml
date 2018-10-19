@@ -55,10 +55,10 @@
         <TextBox Grid.Column="4" Grid.Row="6" Width="200" Name="tbxEmail" FontSize="16"/>
 
         <WrapPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="6" Margin="5" Height="100" >
-            <Image Source="Images\coffee.jpg" Height="100" Width="180" />
-            <Image Source="Images\startup.jpg" Height="100" Width="180" />
-            <Image Source="Images\callcentre.jpg" Height="100" Width="180" />
-            <Image Source="Images\laptop.jpg" Height="100" Width="180" />
+            <Image Source="C:\Users\Ian\Documents\General Computing Ltd\Hostpapa\BackUps\22.06.2018_public_html\images\coffee.jpg" Height="100" Width="180" />
+            <Image Source="C:\Users\Ian\Documents\General Computing Ltd\Hostpapa\BackUps\22.06.2018_public_html\images\callcentre.jpg" Height="100" Width="180" />
+            <Image Source="C:\Users\Ian\Documents\General Computing Ltd\Hostpapa\BackUps\22.06.2018_public_html\images\startup.jpg" Height="100" Width="180" />
+            <Image Source="C:\Users\Ian\Documents\General Computing Ltd\Hostpapa\BackUps\22.06.2018_public_html\images\laptop.jpg" Height="100" Width="180" />
         </WrapPanel>
     </Grid>
 </Window>
