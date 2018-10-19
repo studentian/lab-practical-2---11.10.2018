@@ -186,6 +186,7 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
@@ -196,9 +197,134 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Name="tblockOffers" Text="Summary" FontSize="20" TextDecorations="underline" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" VerticalAlignment="Center" />
-                
-</Grid>
+                    <TextBlock Name="tblockOffers" Text="List off loan approvals / rejections" FontSize="20" TextDecorations="underline" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" VerticalAlignment="Center" />
+
+                    <FlowDocumentReader Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="10">
+                        <FlowDocument>
+
+                            <Table CellSpacing="6">
+
+                                <Table.Columns>
+                                    <TableColumn/>
+                                    <TableColumn/>
+                                    <TableColumn/>
+                                    <TableColumn/>
+                                    <TableColumn/>
+                                    <TableColumn/>
+                                </Table.Columns>
+
+                                <TableRowGroup>
+
+                                    <!-- Header row for the table. -->
+                                    <TableRow Background="LightGoldenrodYellow">
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Bold">Loan Provider</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Bold">Loan Amount</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Bold">Term</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Bold">Approved</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Bold">Accept</Paragraph>
+                                        </TableCell>
+                                    </TableRow>
+
+                                    <!-- Four data rows for the inner planets. -->
+                                    <TableRow>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">AIB</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">57,910,000 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">4,880 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">3.30e23 kg</Paragraph>
+                                        </TableCell>
+                                    </TableRow>
+                                    <TableRow Background="lightgray">
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">Standard Chartered</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">108,200,000 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">12,103.6 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">4.869e24 kg</Paragraph>
+                                        </TableCell>
+                                    </TableRow>
+                                    <TableRow>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">HSBC</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">108,200,000 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">12,103.6 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">4.869e24 kg</Paragraph>
+                                        </TableCell>
+                                    </TableRow>
+                                    <TableRow Background="lightgray">
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">Ulster Bank</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">108,200,000 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">12,103.6 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">4.869e24 kg</Paragraph>
+                                        </TableCell>
+                                    </TableRow>
+                                    <TableRow>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">Bank Of Ireland</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">108,200,000 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">12,103.6 km</Paragraph>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Paragraph FontSize="10" FontWeight="Medium">4.869e24 kg</Paragraph>
+                                        </TableCell>
+                                    </TableRow>
+                                    
+                                    <!-- Footer row for the table. -->
+                                    <TableRow>
+                                        <TableCell ColumnSpan="4">
+                                            <Paragraph FontSize="10" FontStyle="Italic" Foreground="BlueViolet">
+                                                Information provided here is to provide guidance only. 
+                                            </Paragraph>
+                                            <Paragraph FontSize="10" FontStyle="Italic" Foreground="BlueViolet">
+                                                Your financial services provider will provide you with additional documentation to sign prior to receiving a loan.
+                                            </Paragraph>
+                                        </TableCell>
+                                    </TableRow>
+
+                                </TableRowGroup>
+                            </Table>
+                        </FlowDocument>
+                    </FlowDocumentReader>
+
+
+                </Grid>
 
             </TabItem> 
             
